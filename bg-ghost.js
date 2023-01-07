@@ -5,7 +5,8 @@ const addGhostCss = async (tabId) => {
   });
 
   chrome.action.setBadgeBackgroundColor({
-    color: "#DA0037"
+    color: "#DA0037",
+    tabId
   });
 }
 
@@ -16,7 +17,8 @@ const removeGhostCss = async (tabId) => {
   });
 
   chrome.action.setBadgeBackgroundColor({
-    color: "#171717"
+    color: "#171717",
+    tabId
   });
 }
 chrome.action.onClicked.addListener(async (tab) => {
