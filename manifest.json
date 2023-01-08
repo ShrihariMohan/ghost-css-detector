@@ -1,6 +1,6 @@
 {
   "name": "Ghost CSS Detector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find the ghost css in your app in a single click.",
   "manifest_version": 3,
   "author": "Shrihari Mohan",
@@ -15,7 +15,7 @@
     "96": "assets/icon.png"
   },
   "host_permissions": ["<all_urls>"],
-  "permissions": ["activeTab", "tabs", "scripting"],
+  "permissions": ["tabs", "scripting"],
   "background": {
     "service_worker": "bg-ghost.js"
   }
